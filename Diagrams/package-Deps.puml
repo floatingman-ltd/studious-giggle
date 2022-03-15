@@ -1,0 +1,12 @@
+@startuml Package Dependencies
+
+[Console] as C
+[Publisher] as P
+[Domain] as E
+[Subscriber] as S
+
+P --> E : uses
+S --> E : uses
+C --> P : uses
+
+@enduml
